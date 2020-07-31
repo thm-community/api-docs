@@ -1,0 +1,23 @@
+language: ruby
+cache: bundler
+
+rvm:
+  - 2.5.3
+
+before_install:
+  - gem update --system
+  - gem install bundler
+
+script:
+  - ./deploy.sh --source-only
+
+deploy:
+  provider: pages
+  local_dir: build/
+  skip_cleanup: true
+  # see https://docs.travis-ci.com/user/deployment/pages/#setting-the-github-token
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  target_branch: gh-pages
+  on:
+    branch: master
