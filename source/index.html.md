@@ -20,10 +20,7 @@ code_clipboard: true
 
 This is a collection of API endpoint related notes gathered from various [contributors on TryHackMe](https://github.com/thm-community). The documentation below should only be used as a reference to build awesome apps. As the information is reliant on community contributors, some things may not be up to date. 
 
-This is my [personal](https://cmnatic.co.uk) reference guide for anything TryHackMe API-related. At the moment there are no detailed official documents that cover the endpoints and their uses within the site, so as a bot dev, I thought to document everything I have come across and examples.
-
-Endpoints change and sometimes it's easier to update bot code then it is to update my own reference for it. If an endpoint or an example doesn't work as expected, I will not be troubleshooting. Thanks! ~CMNatic
-
+Endpoints change and sometimes it's easier to update bot code then it is to update my own reference for it. If an endpoint or an example doesn't work as expected, I will not be troubleshooting. Thanks! -CMNatic
 
 
 <aside class="notice">Please don't ask for help with <code>x,y,z</code></aside>
