@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>THM API</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -288,7 +288,7 @@
     </script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;json&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -298,10 +298,7 @@
     <div class="toc-wrapper">
       <img src="images/logo-1e815a84.png" class="logo" alt="" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="json">json</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -315,16 +312,65 @@
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#tryhackme-education" class="toc-h1 toc-link" data-title="TryHackMe Education">TryHackMe Education</a>
+          </li>
+          <li>
+            <a href="#site-statistics" class="toc-h1 toc-link" data-title="Site Statistics">Site Statistics</a>
+          </li>
+          <li>
+            <a href="#querying-user-info" class="toc-h1 toc-link" data-title="Querying User Info">Querying User Info</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#query-profile" class="toc-h2 toc-link" data-title="Query Profile:">Query Profile:</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#only-retrieve-a-users-rank" class="toc-h2 toc-link" data-title="Only retrieve a users rank:">Only retrieve a users rank:</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#list-all-badges-a-user-has" class="toc-h2 toc-link" data-title="List all badges a user has:">List all badges a user has:</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-rooms-created-public" class="toc-h2 toc-link" data-title="List all rooms created (public):">List all rooms created (public):</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-rooms-completed-by-user-public" class="toc-h2 toc-link" data-title="List all rooms completed by User (public):">List all rooms completed by User (public):</a>
+                  </li>
+                  <li>
+                    <a href="#list-recent-activity-tasks" class="toc-h2 toc-link" data-title="List recent activity (tasks)">List recent activity (tasks)</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#rooms" class="toc-h1 toc-link" data-title="Rooms">Rooms</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#list-details-of-a-room" class="toc-h2 toc-link" data-title="List details of a Room:">List details of a Room:</a>
+                  </li>
+                  <li>
+                    <a href="#list-tasks-and-questions-of-a-public-room" class="toc-h2 toc-link" data-title="List Tasks and Questions of a public room:">List Tasks and Questions of a public room:</a>
+                  </li>
+                  <li>
+                    <a href="#list-the-last-6-rooms-released" class="toc-h2 toc-link" data-title="List the last 6 rooms released:">List the last 6 rooms released:</a>
+                  </li>
+                  <li>
+                    <a href="#list-highest-scoring-users-within-range" class="toc-h2 toc-link" data-title="List highest scoring users within range:">List highest scoring users within range:</a>
+                  </li>
+                  <li>
+                    <a href="#list-hackitvities" class="toc-h2 toc-link" data-title="List hackitvities:">List hackitvities:</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#koth" class="toc-h1 toc-link" data-title="KoTh">KoTh</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-machine-pool-list" class="toc-h2 toc-link" data-title="Get machine pool list:">Get machine pool list:</a>
+                  </li>
+                  <li>
+                    <a href="#get-info-about-a-game" class="toc-h2 toc-link" data-title="Get info about a game:">Get info about a game:</a>
+                  </li>
+                  <li>
+                    <a href="#list-5-most-recent-games" class="toc-h2 toc-link" data-title="List 5 most recent games">List 5 most recent games</a>
                   </li>
               </ul>
           </li>
@@ -333,7 +379,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
+            <li><a href='https://github.com/thm-community'>By the THM community, for the THM community.</a></li>
             <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -341,184 +387,975 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>This is a collection of API endpoint related notes gathered from various <a href="https://github.com/thm-community">contributors on TryHackMe</a>. The documentation below should only be used as a reference to build awesome apps. As the information is reliant on community contributors, some things may not be up to date. </p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>This is my <a href="https://cmnatic.co.uk">personal</a> reference guide for anything TryHackMe API-related. At the moment there are no detailed official documents that cover the endpoints and their uses within the site, so as a bot dev, I thought to document everything I have come across and examples.</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<p>Endpoints change and sometimes it&#39;s easier to update bot code then it is to update my own reference for it. If an endpoint or an example doesn&#39;t work as expected, I will not be troubleshooting. Thanks! ~CMNatic</p>
+
+<aside class="notice">Please don't ask for help with <code>x,y,z</code></aside>
 <h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>Using routes such as <code>/api/room/room/answer</code> require both a session (CSRF token) and THM account.</p>
+<h1 id='tryhackme-education'>TryHackMe Education</h1>
+<p>As it stands, you only require API keys for THM Education. These endpoints are somewhat detailed <a href="https://docs.tryhackme.com/docs/api-docs/introduction">here</a> provide a lot more functionality designed for teachers i.e. controlling student accounts. This programme is invite only.</p>
+<h1 id='site-statistics'>Site Statistics</h1>
+<p>You can query the site for statistics that were previously displayed on the dashboard. This includes:</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<ul>
+<li>User count</li>
+<li>Public room count</li>
+<li>Cloneable rooms count</li>
+</ul>
+<h4 id='http-request'>HTTP Request</h4>
+<p><code>GET https://tryhackme.com/api/getstats</code></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"publicRooms"</span><span class="p">:</span><span class="w"> </span><span class="mi">219</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"totalUsers"</span><span class="p">:</span><span class="w"> </span><span class="mi">110017</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"cloneableRooms"</span><span class="p">:</span><span class="w"> </span><span class="mi">1190</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h1 id='querying-user-info'>Querying User Info</h1>
+<ul>
+<li>query profile i.e. avatar, points and rank</li>
+<li>query a users rank</li>
+<li>list all badges a user has</li>
+<li>list public rooms they have created</li>
+<li>list all public rooms completed by user</li>
+<li>view activity (streak &amp; heatmap objects)</li>
+</ul>
+<h3 id='query-profile'>Query Profile:</h3><h4 id='http-request-2'>HTTP Request</h4>
+<p><code>GET https://tryhackme.com/api/user/{username}</code></p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">();</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Default</th>
+<th>Required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
+<td>username</td>
 <td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>You must provide a valid username (https://tryhackme.com/p/username)</td>
 </tr>
 </tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="nl">"userRank"</span><span class="p">:</span><span class="w"> </span><span class="mi">44</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"points"</span><span class="p">:</span><span class="w"> </span><span class="mi">27679</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/a28268c068c06e8c9369329d39c9de22.jpg"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves a specific kitten.</p>
+</span></code></pre></div><h3 id='only-retrieve-a-users-rank'>Only retrieve a users rank:</h3>
+<p><code>GET https://tryhackme.com/api/usersRank/{username}</code></p>
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>username</td>
+<td>true</td>
+<td>You must provide a valid username (https://tryhackme.com/p/username)</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  <span class="nt">-X</span> DELETE
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+    </span><span class="nl">"userRank"</span><span class="p">:</span><span class="w"> </span><span class="mi">44</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+</span></code></pre></div><h3 id='list-all-badges-a-user-has'>List all badges a user has:</h3>
+<p><code>GET https://tryhackme.com/api/get-badges/{username}</code> </p>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>username</td>
+<td>true</td>
+<td>You must provide a valid username (https://tryhackme.com/p/username)</td>
 </tr>
 </tbody></table>
+<h3 id='list-all-rooms-created-public'>List all rooms created (public):</h3>
+<p>This seems to list by user count (popularity) highest -&gt; lowest</p>
+
+<p><code>GET https://tryhackme.com/api/created-rooms/{username}</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>username</td>
+<td>true</td>
+<td>You must provide a valid username (https://tryhackme.com/p/username)</td>
+</tr>
+<tr>
+<td>success</td>
+<td>false</td>
+<td>This key appears but I can&#39;t figure out its use at the moment</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rooms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"public"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/room-icons/24de724519d5a2f65efc6ae06fc2bbd9.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Google Dorking"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Explaining how Search Engines work and leveraging them into finding hidden content!"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"googledorking"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">8457</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"osint"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"google dorking"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"dork"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"beginner"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"web app"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"research"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"researching"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"clonedRooms"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="nl">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"easy"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"completedUsersNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">6129</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"upVotes"</span><span class="p">:</span><span class="w"> </span><span class="mi">395</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"walkthrough"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+</span></code></pre></div><h3 id='list-all-rooms-completed-by-user-public'>List all rooms completed by User (public):</h3>
+<p>This appears to list in order of first completed -&gt; latest completed. Although I&#39;m not exactly sure.</p>
+
+<p><code>GET http://tryhackme.com/api/all-completed-rooms/{username}</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>username</td>
+<td>true</td>
+<td>You must provide a valid username (https://tryhackme.com/p/username)</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/room-icons/fafc074a97207f99929f2ee28bea87ac.jpeg"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Crack the hash"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cracking hashes challenges"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"crackthehash"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">7058</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"hash"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"hashcat"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"johntheripper"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cracking"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"challenge"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"easy"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+</span></code></pre></div><h3 id='list-recent-activity-tasks'>List recent activity (tasks)</h3>
+<p>This is how streaks and the activity heatmap is counted, each instance has a YY/MM/DD object.</p>
+
+<p>Heatmap actions:
+- deploy-downloadable (material)
+- deploy-vm (instance)
+- answer-question</p>
+
+<p>Streaks:
+- answer-question</p>
+
+<p><code>GET http://tryhackme.com/api/get-activity-events/{username}</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>username</td>
+<td>true</td>
+<td>You must provide a valid username (https://tryhackme.com/p/username)</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w">        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"deploy-vm"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"events"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
+        </span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div><h1 id='rooms'>Rooms</h1>
+<p>The following endpoints require the <code>room_code</code> to be provided. This code is the identifier within the url in your browser. For example, the room <code>https://tryhackme.com/room/blue</code> will have the <code>room_code</code> of <code>blue</code>.
+- list details of a room 
+- list tasks and questions of a public room (free-only unless authenticated)
+- list the last 6 rooms released
+- list the highest scoring users within specified amount
+- list hacktivities (all public rooms)</p>
+<h3 id='list-details-of-a-room'>List details of a Room:</h3>
+<p><code>GET http://tryhackme.com/api/room/{room_code}</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>room_code</td>
+<td>true</td>
+<td>You must provide a valid room code.</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DarkStar7471"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ownerAvatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/DarkStar7471.png"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Deploy &amp; hack into a Windows machine, leveraging common misconfigurations issues."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/room-icons/7717bbc69c486931e503a74f3192a4d8.gif"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-17T23:39:23.554Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">25061</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"banned"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"M3LVS"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"walkthrough"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"public"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"cloneable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"oneTimeFee"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"easy"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"freeToUse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ctf"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"sponsor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"file"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"windows"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"eternal blue"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">" MS17-010"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">" CVE2017-0144"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">" CVE-2017-0145"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">" CVE-2017-0146"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"CVE-2017-0147"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"CVE-2017-0148"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"SMB"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"CVE-2017-0143"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"video"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"ipType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"private"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"simpleRoom"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"writeups"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DarkStar7471"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/DarkStar7471.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Official Write-up"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://github.com/DarkStar7471/CTF-Win7/blob/master/README.md"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-22T03:18:29.299Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DarkStar7471"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/DarkStar7471.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Official Write-Up"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://github.com/DarkStar7471/CTF-Write-Ups-And-Items/tree/master/TryHackMe/Blue-Win7"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-28T20:24:04.998Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MrSeth6797"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/MrSeth6797.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue - Write-up"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://floreaiulianpfa.com/blue-tryhackme/"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-07-31T06:53:08.352Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sckull"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/3e93f56841fa1e4c49cfd6d053e91878.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue - Solucion"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://sckull.github.io/posts/blue-thm/"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-09-06T05:32:14.897Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wuggles"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/wuggles.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue - Walkthrough"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://unicornsec.com/home/tryhackme-blue-t6red"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-11-11T01:59:14.440Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"crhystamil"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/f4c502a07b5ba5f4eb452c32b0690120.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Windows Blue "</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bit.ly/38XoNwk"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-03-15T04:05:59.104Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ctaner"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/8302e5bfcab6fb45c772562966aedad1.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CTF: TRYHackMe Blue Makinesi Çözümü"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.siberguvenlik.web.tr/index.php/2020/04/10/ctf-tryhackme-blue-makinesi-cozumu/"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-09T21:47:17.483Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tareq"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/0d20b93812a60f072cbcf2ac64b271a6.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"فيديو عربي - Blue@tryhackme"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.youtube.com/watch?v=nX8k5ZIoraE"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-11T14:41:21.854Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c0gnitiveFl0w"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/7143694c971e0691c37343719dc22190.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue- Walkthough"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://breakbeforemake.tech/13656/tryhackme-blue"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-12T18:57:05.340Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"m4sterph0enix"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/63d5591eb7cf3340882f5271611a5ac5.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue Walkthrough"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.hacktoday.io/t/blue-walkthrough-oscp-preparation/2875"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-22T20:17:24.399Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"parasarora06"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/9a4c560c619ebd09defeceb368acae4b.jpeg"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue Walkthrough"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://parasarora06.blogspot.com/2020/05/tryhackme-blue-walkthrough_2.html"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-02T11:04:26.444Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TheMayor"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/6e628f271621c081e52d36ca9c8a869d.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue Walkthrough - No Metasploit Version"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.cybersecpadawan.com/2020/05/tryhackme-blue-eternalblue-exploitation.html"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-07T05:54:24.704Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MrAnarchy"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/3c8ac54ec4e1f773a6105b6600b59926.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Erebus - Walkthrough"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://erebus.vip/2020/05/20/thm-blue/"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T13:02:12.340Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Akshay12"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/8c458528207a916665b7f72244fcbd2a.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue Walkthrough"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://securityhackerctf.blogspot.com/2020/05/blue-walkthrough-tryhackme.html"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-30T16:35:51.906Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hackadvisermx"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/01bfabfcd9c191990d0c2040274a9554.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[SP] Video - Solución - Blue"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://youtu.be/OvMUVGPdSY4"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-31T04:37:39.667Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"R0101"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/0afc270d7ba7fe695be6694857e882b8.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blue CTF Write-up"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bit.ly/2A7Yat1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"posted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-06T14:01:57.977Z"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"screenee"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"active"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"headerImage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://i.imgur.com/GosxHyQ.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"checked"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"accepted"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"comments"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"forumLink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme.com/thread/5e1e4a4ee06ddb0f142757b8"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"views"</span><span class="p">:</span><span class="w"> </span><span class="mi">180073</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"scoreType"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"free"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"completedUsersNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">10483</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='list-tasks-and-questions-of-a-public-room'>List Tasks and Questions of a public room:</h3>
+<p><code>GET http://tryhackme.com/api/tasks/{room_code}</code></p>
+
+<p>Remember that it will only return the values of free rooms unless you are authenticated and a subscriber. </p>
+
+<p>The answer is not returned either from my testing (different endpoint?!)</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>room_code</td>
+<td>true</td>
+<td>You must provide a valid room code.</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"taskTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Recon"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"taskDesc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p style=</span><span class="se">\"</span><span class="s2">text-align:center;</span><span class="se">\"</span><span class="s2">&gt;Scan and learn what exploit this machine is vulnerable to. Please note that this machine does not respond to ping (ICMP) and may take a few minutes to boot up. &lt;b&gt;This room is not meant to be a boot2root CTF, rather, this is an educational series for complete beginners. Professionals will likely get very little out of this room beyond basic practice as the process here is meant to be beginner-focused. &lt;/b&gt;&lt;/p&gt;&lt;p style=</span><span class="se">\"</span><span class="s2">text-align:center;</span><span class="se">\"</span><span class="s2">&gt;&lt;i&gt;Link to Ice, the sequel to Blue: &lt;a href=</span><span class="se">\"</span><span class="s2">https://tryhackme.com/room/ice</span><span class="se">\"</span><span class="s2">&gt;Link&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=</span><span class="se">\"</span><span class="s2">text-align:center;</span><span class="se">\"</span><span class="s2">&gt;&lt;i&gt;You can check out the third box in this series, Blaster, here: &lt;a href=</span><span class="se">\"</span><span class="s2">https://tryhackme.com/room/blaster</span><span class="se">\"</span><span class="s2"> target=</span><span class="se">\"</span><span class="s2">_blank</span><span class="se">\"</span><span class="s2">&gt;Link&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=</span><span class="se">\"</span><span class="s2">text-align:center;</span><span class="se">\"</span><span class="s2">&gt;-----------------------------------------&lt;/p&gt;&lt;p style=</span><span class="se">\"</span><span class="s2">text-align:center;</span><span class="se">\"</span><span class="s2">&gt;&lt;br /&gt;&lt;/p&gt;&lt;p style=</span><span class="se">\"</span><span class="s2">margin-bottom:0px;text-align:center;</span><span class="se">\"</span><span class="s2">&gt;The virtual machine used in this room (Blue) can be downloaded for offline usage from &lt;a href=</span><span class="se">\"</span><span class="s2">https://darkstar7471.com/resources.html</span><span class="se">\"</span><span class="s2">&gt;https://darkstar7471.com/resources.html&lt;/a&gt;&lt;a href=</span><span class="se">\"</span><span class="s2">https://darkstar7471.com/resources.html</span><span class="se">\"</span><span class="s2">&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style=</span><span class="se">\"</span><span class="s2">margin-bottom:0px;text-align:center;</span><span class="se">\"</span><span class="s2">&gt;&lt;br /&gt;&lt;/p&gt;&lt;p style=</span><span class="se">\"</span><span class="s2">margin-bottom:1rem;text-align:center;</span><span class="se">\"</span><span class="s2">&gt;&lt;i&gt;Enjoy the room! For future rooms and write-ups, follow &lt;a href=</span><span class="se">\"</span><span class="s2">https://twitter.com/darkstar7471</span><span class="se">\"</span><span class="s2">&gt;@darkstar7471&lt;/a&gt; on Twitter.&lt;/i&gt;&lt;/p&gt;"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"taskType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"THM"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"taskCreated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-19T21:54:54.022Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"taskDeadline"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"tasksInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="nl">"uploadId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5c8ec51594a5767fa67f7060"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"questions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"question"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;Scan the machine. (If you are unsure how to tackle this, I recommend checking out the room &lt;a href=</span><span class="se">\"</span><span class="s2">https://tryhackme.com/room/rpnmap</span><span class="se">\"</span><span class="s2">&gt;RP: Nmap&lt;/a&gt;)&lt;/p&gt;"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"hint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Command: nmap -sV -vv --script vuln TARGET_IP"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"question"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;How many ports are open with a port number under 1000?&lt;/p&gt;"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"hint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Near the top of the nmap output: PORT STATE SERVICE "</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"question"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;What is this machine vulnerable to? (Answer in the form of: ms??-???, ex: ms08-067)&lt;/p&gt;"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"hint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Revealed by the ShadowBrokers, exploits an issue within SMBv1"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+</span></code></pre></div><h3 id='list-the-last-6-rooms-released'>List the last 6 rooms released:</h3>
+<p><code>GET http://tryhackme.com/api/new-rooms</code></p>
+
+<p>These rooms can be either walkthrough or challenge type. I could not query this endpoint to return by type. I don&#39;t know why you can only return up to 6 of the latest rooms either.</p>
+
+<p>The answer is not returned either from my testing (different endpoint?!)</p>
+
+<p>Also, this endpoint has been subject to change quite frequently.</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/room-icons/fd7c6efd1cf9dbb6866c76382fd82397.png"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dave's Blog"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My friend Dave made his own blog! "</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"davesblog"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">185</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"security"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nodejs"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nosql"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"binexp"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"bof"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buffer overflow"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"weekly challenge"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"challenge"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hard"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"oneTimeFee"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"completedUsers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"szymex73"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"0day"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nella17"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"0X10001"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"onurshin"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"necross"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"allFun"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"legndery"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Zippyrippy"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"7s26simon"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"upVotes"</span><span class="p">:</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-26T20:14:28.661Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"published"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-06-26T19:04:02.946Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"creator"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jammy"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+</span></code></pre></div><h3 id='list-highest-scoring-users-within-range'>List highest scoring users within range:</h3>
+<p><code>GET http://tryhackme.com/api/getgraphdata/{user_count}/{room_code}</code></p>
+
+<p>This is quite useful for generating your own leaderboards for example. It&#39;s quite illogical in the sense that you have to provide user_count THEN room_code.</p>
+
+<p>You also receieve the user info and the points they scored for each question answered in the provided room_code as well timestamps.</p>
+
+<p>Note the <code>level</code> object correlates to their profile level i.e. &quot;level&quot;:3 = 0x3 where <code>rankLevel</code> correlates to their <strong>position in the room - not THM-wide ranking</strong></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_count</td>
+<td>true</td>
+<td>Specify the amount of users you want to gather data for (i.e. 3, 10). Query response time is decided by this!!!</td>
+</tr>
+<tr>
+<td>room_code</td>
+<td>true</td>
+<td>You must provide a valid room code.</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lemalealpha"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/lemalealpha.jpg"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 1 - Question 1"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 1 - Question 2"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 1 - Question 3"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 2 - Question 1"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 2 - Question 2"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 2 - Question 3"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 2 - Question 4"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 2 - Question 5"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 3 - Question 1"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 3 - Question 2"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 3 - Question 3"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 3 - Question 4"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 3 - Question 5"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 3 - Question 6"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 3 - Question 7"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 3 - Question 8"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 4 - Question 1"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 4 - Question 2"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 5 - Question 1"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 5 - Question 2"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Task 5 - Question 3"</span><span class="p">,</span><span class="w">
+                </span><span class="mi">30</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"taskData"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-21T21:03:01.544Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-22T21:50:05.033Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T06:32:47.496Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T06:33:05.343Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T06:35:01.974Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T06:37:30.127Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T06:36:40.351Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T06:37:07.056Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T14:07:15.651Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T14:08:17.960Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T14:08:35.090Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T14:09:11.954Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T14:09:22.696Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T14:09:35.194Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T14:09:36.739Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-23T14:09:37.788Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-26T21:11:28.546Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-26T21:34:33.836Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-27T13:12:50.543Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-27T14:00:44.195Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"taskNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"questionNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"correct"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"timeCorrect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-03-27T13:18:44.387Z"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"totalScore"</span><span class="p">:</span><span class="w"> </span><span class="mi">630</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rankNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span></code></pre></div><h3 id='list-hackitvities'>List hackitvities:</h3>
+<p>This is every public room on the site. This is one of the endpoints that you can do most querying to narrow your results for.</p>
+
+<p>As of 29/06/2020 it looks like it may of changed and I haven&#39;t had a chance to figure out the new params more then:</p>
+
+<p>type : room type
+difficulty : easy , medium , hard</p>
+
+<p>For reference, my previous notes: </p>
+
+<p><code>GET http://tryhackme.com/api/hacktivites/{query}/{order_by}/{difficulty}/{type}</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>query</td>
+<td>false</td>
+<td>Search by tags or content of room descriptions</td>
+</tr>
+<tr>
+<td>order_by</td>
+<td>false</td>
+<td>Order by <code>most-popular</code> (upvotes), <code>most-users</code> (most users), <code>newest</code> (newest)</td>
+</tr>
+<tr>
+<td>difficulty</td>
+<td>false</td>
+<td>easy, medium, hard</td>
+</tr>
+<tr>
+<td>type</td>
+<td>false</td>
+<td>walkthrough, challenge</td>
+</tr>
+</tbody></table>
+<h5 id='i-e-challenge-rooms-as-of-29-06-2020'>I.E. challenge rooms (as of 29.06.2020)</h5>
+<p><code>GET http://tryhackme.com/api/hacktivities?difficulty=easy</code></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/room-icons/fafc074a97207f99929f2ee28bea87ac.jpeg"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Crack the hash"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cracking hashes challenges"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"crackthehash"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">7059</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"hash"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"hashcat"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"johntheripper"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cracking"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"challenge"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"easy"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"userCompleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"upVotes"</span><span class="p">:</span><span class="w"> </span><span class="mi">198</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-11-18T20:45:53.545Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"freeToUse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"creator"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ben"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/room-icons/81eb59b8dc0fc1289ab597ba0efd2e50.png"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OWASP Juice Shop"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This machine uses the OWASP Juice Shop vulnerable web application to learn how to identify and exploit common web application vulnerabilities. This room has been designed for beginners, but can be completed by anyone."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"juiceshop"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">6477</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"security"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"webapplication"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"owasp"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"beginner"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"challenge"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"easy"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"userCompleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"upVotes"</span><span class="p">:</span><span class="w"> </span><span class="mi">92</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-02T17:10:51.638Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"freeToUse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"creator"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ashu"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+</span></code></pre></div><h1 id='koth'>KoTh</h1>
+<ul>
+<li>get machine pool list</li>
+<li>get info about a game</li>
+<li>list 5 most recent koth games</li>
+</ul>
+
+<p>(thanks to szymex73 for this one)</p>
+<h3 id='get-machine-pool-list'>Get machine pool list:</h3>
+<p><code>GET http://tryhackme.com/games/koth/get/machine-pool</code></p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Carnage"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"os"</span><span class="p">:</span><span class="w"> </span><span class="s2">"linux"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lion"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"os"</span><span class="p">:</span><span class="w"> </span><span class="s2">"linux"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hackers"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"os"</span><span class="p">:</span><span class="w"> </span><span class="s2">"linux"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fortune"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"os"</span><span class="p">:</span><span class="w"> </span><span class="s2">"linux"</span><span class="w">
+</span></code></pre></div><h3 id='get-info-about-a-game'>Get info about a game:</h3>
+<p><code>GET http://tryhackme.com/games/koth/data/2743</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>game_id</td>
+<td>true</td>
+<td>You must provide a game id</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2743</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"startTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-15T13:43:00.980Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"startTimeRemaining"</span><span class="p">:</span><span class="w"> </span><span class="mf">-3913585.075</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"finishTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-15T14:43:00.117Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"finishTimeRemaining"</span><span class="p">:</span><span class="w"> </span><span class="mf">-3909985.938</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"complete"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"king"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"found"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"changes"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"chartData"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"series"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmnatic"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currentPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="mi">20</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"notcmnatic"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"currentPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="mi">0</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"labels"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"2020-05-15T13:53:18.268Z"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"firstHacked"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-15T13:53:18.268Z"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"tableData"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmnatic"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/a28268c068c06e8c9369329d39c9de22.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gb"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"flags"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"kingTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rank"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"notcmnatic"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/5353534f405df9de8d852946f7c8c3ae.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gb"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"flags"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"kingTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"rank"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+
+    </span><span class="nl">"box"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Food"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"os"</span><span class="p">:</span><span class="w"> </span><span class="s2">"linux"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"flagNo"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"resets"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"gameType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"private"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdBy"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5de96d9ca744773ea7ef8c00"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cmnatic"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://tryhackme-images.s3.amazonaws.com/user-avatars/a28268c068c06e8c9369329d39c9de22.jpg"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='list-5-most-recent-games'>List 5 most recent games</h3>
+<p><code>GET http://tryhackme.com/games/koth/recent/games</code></p>
+
+<p>The json output is the same format as the above but just x5 over so I&#39;m not going to repost.</p>
 <h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
@@ -581,10 +1418,7 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="json">json</a>
           </div>
       </div>
     </div>
